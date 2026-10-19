@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Explorer Route</title>
+    <link rel="stylesheet" href="/src/style.css" />
+  </head>
+
+
+  <body>
+
+    <main id="app">
+
+      <header>
+        <h1>Voyager</h1>
+        <p id="status"></p>
+      </header>
+
+      <section id="globe-wrap">
+        <canvas
+          id="globe"
+          tabindex="0"
+          aria-label="Interactive globe showing an expedition route. Drag to rotate, scroll or pinch to zoom, arrow keys to rotate."
+        ></canvas>
+
+        <div class="globe-controls">
+          <button type="button" id="btn-replay" title="Replay the route" aria-label="Replay the route">▶</button>
+          <button type="button" id="btn-center" title="Re-center on the route" aria-label="Re-center on the route">◎</button>
+          <button type="button" id="btn-zin" title="Zoom in" aria-label="Zoom in">+</button>
+          <button type="button" id="btn-zout" title="Zoom out" aria-label="Zoom out">−</button>
+        </div>
+      </section>
+
+      <section id="hints" aria-label="Hints"></section>
+      <section id="guesses" aria-label="Your guesses"></section>
+      <section id="play"></section>
+      <section id="result"></section>
+      
+    </main>
+
+    <script type="module" src="/src/main.js"></script>
+
+  </body>
+</html>
