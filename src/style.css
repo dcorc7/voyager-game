@@ -33,6 +33,27 @@ h1 { margin: 0; font-size: 1.5rem; letter-spacing: 0.02em; }
 #status { margin: 0; color: var(--muted); font-size: 0.95rem; }
 
 
+#instructions-panel {
+  background: var(--panel);
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  padding: 12px 14px;
+}
+
+#instructions-details {
+  padding: 5px;
+}
+
+#instructions-summary {
+  font-weight: bold; 
+  cursor: pointer;
+}
+
+#instructions { 
+  margin-top: 10px; 
+  color: var(--ink); 
+  font-size: 1rem;
+}
 
 
 /* --------------------------- */
@@ -92,7 +113,7 @@ section:empty { display: none; }
 
 .hint { display: flex; gap: 10px; padding: 6px 0; border-bottom: 1px solid var(--border); }
 .hint:last-child { border-bottom: 0; }
-.hint .tag { min-width: 5.2rem; color: var(--accent); font-size: 0.85rem; text-transform: uppercase; letter-spacing: 0.06em; padding-top: 2px; }
+.hint .tag { min-width: 7rem; color: var(--accent); font-size: 0.9rem; text-transform: uppercase; letter-spacing: 0.06em; padding-top: 2px; }
 .hint.locked { color: var(--muted); }
 .hint.locked .tag { color: var(--muted); }
 .hint.new { animation: pop 0.5s ease-out; }

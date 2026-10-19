@@ -14,9 +14,9 @@ npm run check:routes   # flags route segments that cross land
 npm run build          # static site in dist/
 ```
 
-## How a Round Plays
+## How to Play
 
-1. The route animates along the globe (the camera follows the ship), then settles on a framing of the whole route. Drag to rotate, scroll or pinch to zoom, arrow keys and +/- also work. Buttons: replay, re-center, zoom.
+1. The route animates along the globe (the camera follows the ship), then settles on a frame of the entire route once completed. Drag to rotate, scroll or pinch to zoom, arrow keys and +/- also work. Buttons: replay, re-center, zoom.
 2. Type a name (the input autocompletes from the explorer list) and press Guess. Unknown names and repeats don't use up an attempt.
 3. Wrong guess N unlocks hint N. After the 5th wrong guess you get one last attempt with all hints visible.
 4. When the game ends, every hint is shown, place names appear on the globe, and you get a Wordle-style share card.
@@ -70,14 +70,6 @@ Guidelines:
 ## Data Caveat
 
 The sample expeditions (Columbus, Magellan, Cook, da Gama, Amundsen, Shackleton, Zheng He, Leif Erikson) are written from general knowledge. Waypoints are simplified approximations of the real routes, and some figures are estimates that vary by source: crew sizes, and the exact positions for the Norse voyage (the sagas don't give coordinates). Verify facts and refine routes against solid sources before publishing.
-
-## Ideas for Next Steps
-
-- A guess-feedback row after each wrong guess (same century? same country? same ocean?).
-- Per-hint score decay instead of per-attempt, or a bonus for guessing before zooming.
-- A hard mode that hides the graticule or draws the route without the animation.
-- A bigger dataset: add explorers in batches and keep running the tests and the route checker.
-- Optional leaderboards: Supabase or a small FastAPI service receiving the daily score.
 
 ## Deploy
 
