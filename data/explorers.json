@@ -295,5 +295,105 @@
       { "name": "Markland (Labrador)", "lat": 53.6, "lon": -54.8 },
       { "name": "Vinland (L'Anse aux Meadows)", "lat": 51.6, "lon": -55.6 }
     ]
+  },
+  {
+    "id": "polo",
+    "name": "Marco Polo",
+    "aliases": ["Milione", "Marco Milione"],
+    "years": "1271-1295",
+    "summary": "",
+    "link": "https://en.wikipedia.org/wiki/Marco_Polo",
+    "hints": [
+      { "label": "Era", "text": "Late 13th century" },
+      { "label": "Crew", "text": "Core group of 3 people, mostly family" },
+      { "label": "Origin", "text": "Venetian merchant, explorer, and writer" },
+      { "label": "Sightings", "text": "He described seeing unicorns, which modern historians know were actually Asian rhinoceroses" },
+      { "label": "Legacy", "text": "While imprisoned, the explorer dictated his lifetime of travel memories to a fellow inmate, who compiled them into a famous manuscript" }
+    ],
+    "route": [
+      { "name": "Venice", "lat": 45.15, "lon": 12.12 },
+      { "name": "Acre", "lat": 32.55, "lon": 35.04 },
+      { "name": "Hormuz", "lat": 27.09, "lon": 56.16 },
+      { "name": "Pamir Mountains", "lat": 38, "lon": 72 },
+      { "name": "Kashgar", "lat": 39.28, "lon": 79.59 },
+      { "name": "Shangdu (Xanadu)", "lat": 41.44, "lon": 116.11 },
+      { "name": "Khanbaliq (Beijing)", "lat": 39.54, "lon": 116.23 },
+      { "name": "Hangzhou (Kinsai)", "lat": 30.15, "lon": 120.15 },
+      { "name": "Quanzhou (Zaiton)", "lat": 24.54, "lon": 118.35 }
+    ]
+  },
+  {
+    "id": "battuta",
+    "name": "Ibn Battuta",
+    "aliases": ["Ibn Batuta", "Ibn Batutah"],
+    "years": "1325-1326",
+    "summary": "Ibn Battuta's voyage across north Africa to Cairo",
+    "link": "https://en.wikipedia.org/wiki/Ibn_Battuta",
+    "hints": [
+      { "label": "Era", "text": "Early 14th century" },
+      { "label": "Crew", "text": "Traveled alone starting from Tangier, eventually joiingin a large travel caravan." },
+      { "label": "Origin", "text": "Muslim traveller, explorer, and scholar from Tangier, Morocco." },
+      { "label": "Sightings", "text": "He met around 60 heads of state, serving as a legal judge in Delhi, India, and an envoy to China." },
+      { "label": "Legacy", "text": "Over 29 years (beginning in 1325), he journeyed roughly 75,000 miles, spanning across more than 40 modern countries." }
+    ],
+    "route": [
+      { "name": "Tangier", "lat": 35.75, "lon": -5.8340 },
+      { "name": "Fez", "lat": 34.01, "lon": -5.00 },
+      { "name": "Tlemcen", "lat": 34.89, "lon": -1.315 },
+      { "name": "Algiers", "lat": 36.73, "lon": 3.08 },
+      { "name": "Tunis", "lat": 36.80, "lon": 10.18 },
+      { "name": "Cairo", "lat": 30.04, "lon": 31.23 },
+      { "name": "Aydhab,", "lat": 22.33, "lon": 36.48 },
+      { "name": "Gaza", "lat": 31.50, "lon": 34.46 },
+      { "name": "Jerusalem", "lat": 31.76, "lon": 35.21 },
+      { "name": "Damascus", "lat": 33.51, "lon": 36.29 },
+      { "name": "Mecca", "lat": 21.42, "lon": 39.82 }
+    ]
+  },
+  {
+    "id": "hanno",
+    "name": "Hanno",
+    "aliases": ["Hanno the Navigator"],
+    "years": "500 BC",
+    "summary": "Hanno's naval exploration of the western coast of Africa",
+    "link": "https://en.wikipedia.org/wiki/Hanno_the_Navigator",
+    "hints": [
+      { "label": "Era", "text": "Around 5th century BC" },
+      { "label": "Crew", "text": "30,000 people" },
+      { "label": "Origin", "text": "Carthage, or modern day Tunisia" },
+      { "label": "Vessel", "text": "60 ships" },
+      { "label": "Sightings", "text": "This explorer thought Gorillas were a race of humans and tried to capture some." }
+    ],
+    "route": [
+      { "name": "Carthage", "lat": 36.85, "lon": 10.32 },
+      { "name": "Strait of Gibraltar", "lat": 35.94, "lon": -5.37 },
+      { "name": "Thymiaterion & Moroccan Colonies", "lat": 35.18, "lon": -6.10 },
+      { "name": "Island of Kerne", "lat": 20.6, "lon": -16.47 },
+      { "name": "Senegal River", "lat": 16.03, "lon": -16.50 },
+      { "name": "Cape Mesurado", "lat": 6.31, "lon": -10.81 },
+      { "name": "Gulf of Guinea", "lat": -4.21, "lon": 9.17 }
+    ]
+  },
+  {
+    "id": "heyerdahl",
+    "name": "Thor Heyerdahl",
+    "aliases": ["Kon Tiki"],
+    "years": "1947",
+    "summary": "A 1947 journey by raft across the Pacific Ocean from South America to the Polynesian islands, led by Norwegian explorer and ethnographer Thor Heyerdahl.",
+    "link": "https://en.wikipedia.org/wiki/Kon-Tiki_expedition",
+    "hints": [
+      { "label": "Era", "text": "Mid 20th century" },
+      { "label": "Crew", "text": "Six-man crew, five of whom were Norwegian" },
+      { "label": "Funding", "text": "The trip was funded by private loans, along with donations of equipment from the United States Army." },
+      { "label": "Vessel", "text": "Traveled by raft amde out of balsa logs, which was named after the Inca god Viracocha." },
+      { "label": "Background", "text": "The purpose of the expedition was to show that indigenous South Americans could have reached Polynesia during pre-Columbian times by drifting with the wind directions and only by using the materials available to those people in their time." }
+    ],
+    "route": [
+      { "name": "Callao", "lat": -12.05, "lon": -77.11 },
+      { "name": "Galapagos Islands", "lat": -4.00, "lon": -90.00 },
+      { "name": "Puka-Puka Atoll", "lat": -14.49, "lon": -138.49 },
+      { "name": "Angatau Atoll", "lat": -15.49, "lon": -140.53 },
+      { "name": "Raroia Atoll Reef (Shipwreck Site)", "lat": -16.01, "lon": -142.26 }
+    ]
   }
 ]
