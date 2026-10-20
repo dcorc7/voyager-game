@@ -3,13 +3,11 @@ import { h, store, safeUrl } from "./util.js";
 import {
   MAX_GUESSES,
   HINT_COUNT,
-  GUESS_SCORES,
   dateKey,
   pickDaily,
   newState,
   submitGuess,
   hintsRevealed,
-  scoreFor,
   shareText,
   updateStats,
 } from "./game.js";
