@@ -90,6 +90,7 @@
     "route": [
       {"name":"Plymouth","lat":50.37,"lon":-4.14},
       {"name":"Madeira","lat":32.65,"lon":-16.9},
+      {"name":null,"lat":-23.5,"lon":-36},
       {"name":"Rio de Janeiro","lat":-22.9,"lon":-43.2},
       {"name":"Bay of Good Success","lat":-54.8,"lon":-65.3},
       {"name":"Cape Horn","lat":-55.98,"lon":-67.27},
