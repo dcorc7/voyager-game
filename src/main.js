@@ -194,7 +194,6 @@ function renderResult() {
   const { state, answer, daily, key } = session;
   const won = state.status === "won";
   const link = answer.link ? safeUrl(answer.link) : null;
-  const pts = scoreFor(state);
   const text = shareText(daily ? key : "practice", state, answer.id);
 
   const copyBtn = h("button", {}, "Copy result");
@@ -219,7 +218,7 @@ function renderResult() {
   const stats = daily ? store.get("omx:stats", null) : null;
 
   $("#result").replaceChildren(
-    h("p", { class: "score-big" }, won ? `${answer.name} · +${pts}` : `It was ${answer.name}`),
+    h("p", { class: "score-big" }, won ? `${answer.name}` : `It was ${answer.name}`),
     h("p", { class: "meta" }, `${answer.years}${answer.summary ? ` · ${answer.summary}` : ""}`),
     link
       ? h("p", { class: "meta" }, h("a", { href: link, target: "_blank", rel: "noopener noreferrer" }, "Read more"))
@@ -242,6 +241,11 @@ function renderStats(stats) {
       `Played ${stats.played || 0} · Won ${stats.wins || 0} · Streak ${stats.streak || 0} · Best ${stats.best || 0}`
     ),
     h(
+      "p",
+      { class: "stats-title" },
+      `Guess Distribution (1-${MAX_GUESSES})`
+    ),
+    h(
       "div",
       { class: "dist", "aria-label": "Guess distribution" },
       Array.from({ length: MAX_GUESSES }, (_, i) => {
@@ -254,7 +258,7 @@ function renderStats(stats) {
         );
       })
     ),
-    h("p", { class: "meta" }, `Points by attempt: ${GUESS_SCORES.join(" / ")}. A new explorer arrives tomorrow.`)
+    h("p", { class: "meta" }, `A new explorer arrives tomorrow.`)
   );
 }
 

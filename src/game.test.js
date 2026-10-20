@@ -1,7 +1,6 @@
 import test from "node:test";
 import assert from "node:assert/strict";
 import {
-  GUESS_SCORES,
   HINT_COUNT,
   MAX_GUESSES,
   dayNumber,
@@ -10,7 +9,6 @@ import {
   newState,
   normalizeName,
   pickDaily,
-  scoreFor,
   shareText,
   shiftDay,
   submitGuess,
@@ -57,23 +55,6 @@ test("invalid and repeated guesses do not use up an attempt", () => {
   r = submitGuess(s, explorers, answer, "Bea Bruin");
   assert.ok(r.error);
   assert.equal(r.state.guesses.length, 1);
-});
-
-test("a correct guess wins and scores by attempt number", () => {
-  let s = submitGuess(newState(), explorers, answer, "Bea Bruin").state;
-  s = submitGuess(s, explorers, answer, "Ada Árbol").state;
-  assert.equal(s.status, "won");
-  assert.equal(scoreFor(s), GUESS_SCORES[1]);
-  assert.ok(submitGuess(s, explorers, answer, "Cy Cole").error);
-});
-
-test("running out of guesses loses with zero points", () => {
-  let s = newState();
-  for (const e of explorers.slice(1, 1 + MAX_GUESSES)) {
-    s = submitGuess(s, explorers, answer, e.name).state;
-  }
-  assert.equal(s.status, "lost");
-  assert.equal(scoreFor(s), 0);
 });
 
 test("wrong guesses unlock hints one at a time; game over shows all", () => {

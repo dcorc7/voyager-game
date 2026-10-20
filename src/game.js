@@ -2,8 +2,6 @@
 
 export const MAX_GUESSES = 6;
 export const HINT_COUNT = 5; // wrong guess N unlocks hint N
-export const GUESS_SCORES = [100, 80, 60, 40, 25, 10]; // points for a correct guess on attempt 1..6
-
 
 
 // ---------------------------------------
@@ -130,10 +128,6 @@ export function hintsRevealed(state, answerId, total = HINT_COUNT) {
   return Math.min(wrongCount(state, answerId), total);
 }
 
-export function scoreFor(state) {
-  return state.status === "won" ? GUESS_SCORES[state.guesses.length - 1] ?? 0 : 0;
-}
-
 
 
 // -------------------------------------
@@ -148,7 +142,7 @@ export function shareText(key, state, answerId) {
     else cells.push(state.guesses[i] === answerId ? "🟩" : "🟥");
   }
   const result = state.status === "won" ? n : "X";
-  return `🧭 Explorer Route ${key}\n${result}/${MAX_GUESSES}\n${cells.join("")}`;
+  return `🗺️ Voyager ${key}\n${result}/${MAX_GUESSES}\n${cells.join("")}`;
 }
 
 /** Wordle-style stats: a loss breaks the streak; skipping a day also breaks it. */
